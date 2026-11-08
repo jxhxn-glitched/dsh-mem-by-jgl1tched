@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-mem-panel
+      name: '@local/dsh-mem-panel'

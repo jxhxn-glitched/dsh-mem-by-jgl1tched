@@ -29,6 +29,15 @@ Kinds: `summary` (session archive), `note` (user-saved fragment), `session` (raw
 Key design property, verified by test: **the plugin is the convenience, the folder is the memory.**
 Removing or reinstalling the plugin never loses data — any future session can still read the JSON store.
 
+### Local by design
+
+dsh-mem is **local-only**. There is no cloud sync, no network calls, no telemetry — ever.
+
+- Memories live entirely on the device they were made on: made on the phone, they stay in the phone's storage; made on the desktop, they stay on that machine.
+- Each device keeps its own diary. Nothing syncs or copies itself anywhere by default.
+- Moving device? Copy the `~/.dsh/dsh-mem/` folder yourself — files in, files out. Nothing else needed and nothing leaves your hands.
+- Because the store is plain JSON files, it works even when the plugin is removed, and it travels only when you decide it should.
+
 ## Install
 
 ```sh

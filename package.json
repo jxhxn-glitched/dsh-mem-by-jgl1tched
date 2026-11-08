@@ -1,0 +1,66 @@
+{
+  "name": "local-dsh-mem",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": { "zh": "dsh-mem by gl1tched", "en": "dsh-mem by gl1tched" },
+    "icon": "book",
+    "contributes": {
+      "message.actions": [
+        {
+          "id": "save-reply",
+          "label": { "zh": "存进记忆", "en": "Remember" },
+          "icon": "note"
+        }
+      ],
+      "composer.actions": [
+        {
+          "id": "recall",
+          "label": { "zh": "记忆回顾", "en": "Recall" },
+          "icon": "history"
+        },
+        {
+          "id": "snapshot",
+          "label": { "zh": "存个记忆", "en": "Save note" },
+          "icon": "note"
+        }
+      ],
+      "session.actions": [
+        {
+          "id": "summarize-session",
+          "label": { "zh": "存档本会话", "en": "Archive" },
+          "icon": "archive"
+        }
+      ],
+      "composer.strip": [
+        {
+          "id": "memcount",
+          "icon": "book",
+          "panel": "meminfo"
+        }
+      ],
+      "panels": [
+        {
+          "id": "meminfo",
+          "title": { "zh": "记忆库 dsh-mem", "en": "dsh-mem memory" },
+          "icon": "book",
+          "placement": ["session.tab", "features"]
+        }
+      ],
+      "turn.note": [
+        { "id": "memnote" }
+      ]
+    }
+  }
+}

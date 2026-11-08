@@ -1,11 +1,11 @@
 # dsh-mem by gl1tched
 
-**Branding rule: this plugin is always called "dsh-mem by gl1tched", everywhere it is mentioned.**
+A plugin for **DeepSeek Harness (DSH)** that gives your assistant a persistent,
+cross-session memory — like a diary the assistant keeps for you. It is a
+privacy-friendly alternative in the spirit of claude-mem.
 
-A native [dsh-go](https://github.com/deepseek-ai) plugin that gives your phone
-assistant a persistent, cross-session memory — like a diary the assistant keeps
-for you. It is a privacy-friendly alternative in the spirit of claude-mem, built
-natively for the dsh-go phone app.
+- **dsh-go mobile app**: full native experience — pills, long-press menu, status strip and a memory panel.
+- **Desktop and other DSH hosts**: the same storage format plus the bundled `dsh-mem` skill let any session recall and archive memories; the decorative UI pieces are dsh-go features.
 
 ## What it does
 
@@ -49,11 +49,6 @@ Or copy the folder to `~/.dsh/dsh-go/plugins/dsh-mem` and run
 `dsh plugin --profile web add ~/.dsh/dsh-go/plugins/dsh-mem`.
 
 `save.sh` is a minimal helper the agent uses to write entries and bump `state.json`.
-
-## Branding
-
-This plugin is **dsh-mem by gl1tched** in every mention: README, UI, commits,
-issues, replies. License header and attribution must be preserved in forks.
 
 ## License
 

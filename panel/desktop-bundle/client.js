@@ -83,7 +83,7 @@ window.__ModuleLoader__.load({
 
       return h('div', { style, 'data-dsh-mem': 'panel' },
         h('div', { style: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 } },
-          h('strong', null, 'dsh-mem by gl1tched'),
+          h('strong', null, 'dsh-mem by jgl1tched'),
           h('span', { style: { opacity: 0.6, fontSize: 12 } },
             entries === null ? 'loading…' : `${entries.length} memor${entries.length === 1 ? 'y' : 'ies'}`),
           h('span', { style: { flex: 1 } }),

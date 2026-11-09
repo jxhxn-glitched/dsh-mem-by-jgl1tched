@@ -14,7 +14,7 @@
   },
   "dshGo": {
     "v": 1,
-    "title": { "zh": "dsh-mem by gl1tched", "en": "dsh-mem by gl1tched" },
+    "title": { "zh": "dsh-mem by jgl1tched", "en": "dsh-mem by jgl1tched" },
     "icon": "book",
     "contributes": {
       "message.actions": [

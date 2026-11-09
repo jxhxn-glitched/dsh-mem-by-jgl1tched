@@ -1,4 +1,4 @@
-# dsh-mem by gl1tched
+# dsh-mem by jgl1tched
 
 A plugin for **DeepSeek Harness (DSH)** that gives your assistant a persistent,
 cross-session memory — like a diary the assistant keeps for you. It is a
